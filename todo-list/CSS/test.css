@@ -9,14 +9,14 @@ p > .title {
     background-color: yellow;
     width: 300px;
     height: 300px;
-    border: 2px solid #000;
+    border: 2px dotted #000;
     /* border : 테두리 */
     border-radius: 10px;
 }
 
 .title {
     color: #000;
-    font-size: 200%;
+    font-size: 50px;
     font-weight: 900;
     /* weight : 폰트 두께 */
     text-align: center;
