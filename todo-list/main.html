@@ -28,7 +28,7 @@
           </div>
     </div>
 
-  <script>
+  <!-- <script>
       // console.log("만세!");
       // function x() {
       //   alert("만세!");
@@ -107,6 +107,27 @@
 
       }
     }
+  </script> -->
+
+  <script>
+    // 함수 
+    function x(num1, num2) {
+      return num1 + num2
+    }
+    let y = x(100, 200)
+    console.log(y)
+
+    // 제공하는 함수
+    let str1 = "자-바-를-자-바";
+    let str2 = str1.split("-")  // 괄호안의 구분자로 구분하여 배열 생성
+    console.log(str2)           // (5) ['자', '바', '를', '자', '바']
+
+    let str3 = str2.join("*");  
+    console.log(str3);          // "자*바*를*자*바" 라는 문자열로 바꿔줌
+
+    console.log(str1.indexOf("를"))   // 문자열을 배열로 생각해서
+								                  	  //"를"이라는 글자의 index번호를 알려줌
+
   </script>
 </body>
 </html>
