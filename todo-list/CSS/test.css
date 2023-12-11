@@ -1,26 +1,6 @@
-/* p > span {
+#title {
     color: red;
-} 
-p > .title {
-    color: red;
-}*/
-
-.layout {
-    background-color: yellow;
-    width: 300px;
-    height: 300px;
-    border: 2px dotted #000;
-    /* border : 테두리 */
-    border-radius: 10px;
 }
-
 .title {
-    color: #000;
-    font-size: 50px;
-    font-weight: 900;
-    /* weight : 폰트 두께 */
-    text-align: center;
-    margin-top: 100px;
-    padding-top: 50px;
-    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 150%;
 }
