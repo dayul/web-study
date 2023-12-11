@@ -69,5 +69,28 @@
       ]
       console.log(dic);
   </script>  
+
+  <script>
+    let api = {
+      "page": 1,
+      "total_results": 10000,
+      "total_pages": 500,
+      "results" : [
+            {
+              "popularity": 3032.234,
+              "vote_count": 145,
+              "video": false,
+              "genre_ids": [
+                18, 86, 53
+              ],
+              "title": "2093",
+              "vote_average": 5.8
+            }
+        ]
+      
+    }
+    // results 안의 vote_count를 찾고 싶을때
+    console.log(api.results[0].vote_count)
+  </script>
 </body>
 </html>
