@@ -1,0 +1,52 @@
+body {
+    background-color: hotpink;
+}
+
+#container {
+    width: 500px;
+    height: 300px;
+    margin-top: 300px;
+    text-align: center;
+}
+
+#title {
+    color: #ffff;
+}
+
+#sub-container {
+    width: 100%;
+    height: 300px;
+    background-color: #ffff;
+    border: 5px solid deeppink;
+    border-radius: 20px;
+}
+
+#list-group {
+    padding-top: 20px;
+}
+
+.list-group-item {      /*여러 태그에 적용하려고 하므로 class*/  
+    border: none !important;            /* 부트스트랩의 스타일을 모두 무시 */
+    border-bottom: 1px solid #eee !important;
+}
+
+.badge {
+    background-color: slateblue !important;
+}
+
+#input-group {
+    margin-top: 10px;
+}
+
+#input-area {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#button-area {
+    border: none;
+    color: #fff;
+    background-color: mediumslateblue;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
