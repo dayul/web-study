@@ -1,4 +1,6 @@
-# Html & Css & JavaScript를 이용한 Todo-list 만들기
+# 웹 강의 실습
+## Todo-list 만들기 
+- Html & Css & JavaScript 사용
 - Bootstrap 활용
 - JQuery로 할일 add, delete함수 구현
 
