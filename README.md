@@ -14,7 +14,7 @@
 - 리뷰 작성, 보기 등 함수 구현
 - ajax 사용
 
-![alt text](image.png)
+![image](https://github.com/dayul/web-study/assets/128597263/6cbcf82c-9276-4c04-8943-a5b741470331)
 
 ---
 
