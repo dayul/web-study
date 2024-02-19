@@ -1,0 +1,25 @@
+.layout {
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 30px;   /*바깥쪽 여백 */
+}
+
+#layout_id_02 {
+    background-color: aliceblue;
+    font-family: "Bagel Fat One", system-ui;
+    width: 100px;
+    height: 100px;
+    border: 10px solid black;
+    padding: 20px;  /*안쪽 여백 */
+}
+
+.layout02 > p {
+    color: blueviolet;
+}
+
+p {
+    color: #fff;
+    font-weight: 700;
+}
