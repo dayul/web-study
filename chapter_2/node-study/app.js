@@ -3,6 +3,9 @@ const helmet = require('helmet');
 const app = express();      // express 함수가 return하는 것을 app 변수에 저장
 
 app.use(helmet());  // 보안 강화 미들웨어
+app.use(express.json());        // POST 방식의 api를 위해서 꼭 있어야 하는 것
+app.use(express.urlencoded());  // POST 방식의 api를 위해서 꼭 있어야 하는 것
+
 const mainRouter = require('./router/mainRouter');  // 만든 라우터 불러오기
 app.use('/', mainRouter);     // 미들웨어 : 기본주소에 mainRouter 설정
 
