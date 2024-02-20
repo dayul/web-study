@@ -1,8 +1,14 @@
 const express = require('express');     // express를 사용하기 위해 node_modules에서 찾아 express 변수에 저장
+const helmet = require('helmet');
 const app = express();      // express 함수가 return하는 것을 app 변수에 저장
+app.use(helmet());
 
 app.get("/", function(req,res){     // get 방식의 api
     res.send('Hello World');
+})
+
+app.get('/about', function(req,res){
+    res.send("About page");
 })
 
 app.listen(3000, function(req,res) {    // 스위치
