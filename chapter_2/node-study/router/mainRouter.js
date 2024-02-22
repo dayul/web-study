@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();    // express안에서 Router() 함수를 꺼내서 변수에 저장
 
 router.get("/", function(req,res){     // app.get => router.get으로 변경
-    res.render(index);      // 그림파일(html)을 전달할 때 사용
+    res.render('index', {title: "EJS main page"});      // 그림파일(html)을 전달할 때 사용
 })
 
 router.get('/about', function(req,res){  // app.get => router.get으로 변경
