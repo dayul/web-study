@@ -2,11 +2,7 @@ const express = require('express');
 const router = express.Router();    // express안에서 Router() 함수를 꺼내서 변수에 저장
 
 router.get("/", function(req,res){     // app.get => router.get으로 변경
-
-    let query = req.query;          // 모든 사용자의 요청은 req.query에 존재
-    console.log(query);     // 사용자가 주소창에 입력한 데이터 출력(콘솔)
-
-    res.send({'key':'vaule'});      // 창에 출력(브라우저)
+    res.render(index);      // 그림파일(html)을 전달할 때 사용
 })
 
 router.get('/about', function(req,res){  // app.get => router.get으로 변경
