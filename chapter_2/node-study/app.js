@@ -2,6 +2,7 @@ const express = require('express');     // express를 사용하기 위해 node_m
 const helmet = require('helmet');
 const app = express();      // express 함수가 return하는 것을 app 변수에 저장
 const ejs = require('ejs');     // ejs 사용
+const db = require('./model/db');   // exports한 것을 불러옴
 
 app.set('view engine', 'ejs');      // 그림파일을 브라우저에 보여줄 때 어떤 도구(템플릿)을 사용할지 설정
 app.set('views', './views');         // 만든 html파일은 이 경로(.views)에 있다는 뜻
@@ -15,5 +16,7 @@ const mainRouter = require('./router/mainRouter');  // 만든 라우터 불러�
 app.use('/', mainRouter);     // 미들웨어 : 기본주소에 mainRouter 설정
 
 app.listen(3000, function(req,res) {    // 스위치
+
+    db.sequelize.sync({force:false});   // db를 연결하는 (사용 준비)
     console.log("서버 실행");
 })
