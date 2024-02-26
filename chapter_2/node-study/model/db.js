@@ -18,6 +18,7 @@ sequelize = new Sequelize("class101", "root", "비밀번호", {        /*table�
 });       // 도구들을 가져옴
 
 var db = {};    // 객체식으로 table을 구성
+db.users = sequelize.import(__dirname + "/users.js");   // 만든 table은 무조건 import 해주어야 함, __dirname은 상대주소
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
