@@ -16,12 +16,20 @@ router.post("/postapi", function(req,res){  // post방식의 api (Body에서 데
     res.send('POST API');
 })
 
+// Create
 router.get("/data/create", function(req,res){
     let user_id = parseInt(Math.random() * 10000);
     db.users.create({user_id:user_id}).then(function(result){
         res.send({success:200});
     })  // 객체로 값을 넘겨줌
 
+})
+
+// Read
+router.get("/data/read", function(req,res){
+    db.users.findAll().then(function(result){       // findAll값이 result에 담김
+        res.send({succsess:200});
+    })
 })
 
 module.exports = router;    // router 변수를 밖으로 내보냄 (app.js에서 사용하기위해)
