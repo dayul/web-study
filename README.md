@@ -17,6 +17,10 @@
 
 ![image](https://github.com/dayul/web-study/assets/128597263/6cbcf82c-9276-4c04-8943-a5b741470331)
 
+## chapter_2
+### 1. API 만들기
+- CRUD API 구현
+- Sequelize 활용
 ---
 
 ## TIL (공부한 내용 정리 블로그 링크)
