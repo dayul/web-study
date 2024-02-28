@@ -32,4 +32,13 @@ router.get("/data/read", function(req,res){
     })
 })
 
+// Update
+router.post("/data/update", function(req,res){
+    let target_id = res.body.target_id;     // Postman에서 데이터를 받음
+    db.users.update({user_id:9999},{where:{user_id:target_id}}).then(function(result) {     // 1번째 인자: 바꿀 값, 2번째 인자: where절로 찾는 과정(Postman에서 받음)
+        res.send({success:200});
+    })    
+    
+})
+
 module.exports = router;    // router 변수를 밖으로 내보냄 (app.js에서 사용하기위해)
