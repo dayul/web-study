@@ -41,4 +41,12 @@ router.post("/data/update", function(req,res){
     
 })
 
+// Delete
+router.post("/data/delete", function(req,res){
+    let target_id = res.body.target_id;
+    db.users.destroy({where:{user_id:target_id}}).then(function(result){
+        res.send({success:200});
+    })
+})
+
 module.exports = router;    // router 변수를 밖으로 내보냄 (app.js에서 사용하기위해)
