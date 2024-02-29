@@ -3,7 +3,7 @@ const router = express.Router();    // express안에서 Router() 함수를 꺼�
 const db = require('../model/db');   // exports한 것을 불러옴
 
 router.get("/", function(req,res){     // app.get => router.get으로 변경
-    res.render('index', {title: "EJS main page"});      // 그림파일(html)을 전달할 때 사용
+    res.render('main', {title: "영화 리뷰 사이트"});      // 그림파일(html)을 전달할 때 사용
 })
 
 router.get('/about', function(req,res){  // app.get => router.get으로 변경

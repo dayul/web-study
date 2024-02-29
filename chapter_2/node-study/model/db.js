@@ -3,7 +3,7 @@
 var Sequelize = require("sequelize");
 var sequelize;
 
-sequelize = new Sequelize("class101", "root", "비밀번호", {        /*table명, 사용자, 비밀번호*/
+sequelize = new Sequelize("class101", "root", "dy070709!", {        /*table명, 사용자, 비밀번호*/
     host:"localhost",
     port:3306,      // mysql은 3306 port를 이용
     dialect:"mysql",    // db 종류
